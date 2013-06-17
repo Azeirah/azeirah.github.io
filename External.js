@@ -21,6 +21,7 @@ var plug = function(){
 
 var zaycev = function(){
 	var newtitle = 'Zaycef - ' + $('.ontheair_artist').text() + $('.ontheair_song').text();
+	console.log(newtitle);
 	$('title').text(newtitle);
 }
 
