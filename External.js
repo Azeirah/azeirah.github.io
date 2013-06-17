@@ -6,16 +6,19 @@ strip = function(url){
 
 var grooveshark = function(){
   var newtitle = 'Grooveshark - ' + $('#now-playing-metadata').text();
+	console.log(newtitle);
 	$('title').text(newtitle);
 }
 
 var pandora = function(){
   var newtitle = 'Pandora - ' + $('.info .playerBarSong').text() + ' - ' + $('.info .playerBarArtist').text();
+	console.log(newtitle);
 	$('title').text(newtitle);
 }
 
 var plug = function(){
   var newtitle = 'Plug.dj - ' + $('#now-playing-value').text();
+	console.log(newtitle);
 	$('title').text(newtitle);
 }
 
