@@ -1,6 +1,10 @@
 strip = function(url){
+	if('www' in url){
+		url = url.replace('www','');
+	}
   url = url.split('.')[0];
   url = url.split('/');
+	console.log(url);
   return url[2]
 }
 
