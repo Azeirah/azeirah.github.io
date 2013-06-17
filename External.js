@@ -1,6 +1,12 @@
 strip = function(url){
 	if(url.indexOf('www.') != -1){
-		url = url.replace('www.','');
+		url = url.replace('www.', '');
+	}
+	if(url.indexOf('http://') != -1){
+		url = url.replace('http://', '');
+	}
+	if(url.indexOf('https://') != -1){
+		url = url.replace('https://', '');
 	}
   url = url.split('.')[0];
 	console.log(url)
