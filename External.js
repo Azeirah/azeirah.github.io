@@ -19,10 +19,16 @@ var plug = function(){
 	$('title').text(newtitle);
 }
 
+var zaycev = function(){
+	var newtitle = 'Zaycef - ' + $('.ontheair_artist').text() + $('.ontheair_song').text();
+	$('title').text(newtitle);
+}
+
 redirects = {
 'grooveshark': grooveshark,
 'plug': plug,
-'pandora': pandora
+'pandora': pandora,
+'zaycev': zaycev
 }
 
 site = strip(window.location.origin);
