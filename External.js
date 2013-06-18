@@ -32,7 +32,7 @@ var plug = function(){
 }
 
 var zaycev = function(){
-	var newtitle = 'Zaycev - ' + $('.ontheair_artist').text() + $('.ontheair_song').text();
+	var newtitle = 'Zaycev - ' + $('#zp_current_song .ontheair_artist').text() + $('#zp_current_song .ontheair_song').text();
 	console.log(newtitle);
 	$('title').text(newtitle);
 }
