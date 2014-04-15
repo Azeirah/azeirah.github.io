@@ -26,7 +26,6 @@
       },
       
       plug = function () {
-
         var song = $("#now-playing-bar .bar-value").text(),
             title = "Plug.dj - " + song;
         return {
@@ -57,7 +56,7 @@
       },
 
       googleplay = function () {
-        var song = $("#playerSongTitle").text() + " - ",
+        var song = $("#playerSongTitle").text() + " - " + $("#playerSongTitle").next().text().split("-")[0],
             title = song + " - My Library - Google Play";
         if (song.length < 4) { // " - " is of length 3
           return false;
@@ -94,6 +93,16 @@
             title: title
         };
       },
+
+      musicunlimited = function () {
+        var song = $(".GEKKVSQBL- a")[0].text + " - " + $(".GEKKVSQBL- a")[1].text + " - " + $(".GEKKVSQBL- a")[2].text,
+            title = "Music Unlimited - " + song;
+
+        return {
+          song: song,
+          title: title
+        };
+      },
       
       redirects = {
         "grooveshark": grooveshark,
@@ -104,7 +113,8 @@
         "rdio": rdio,
         "soundcloud": soundcloud,
         "youtify": youtify,
-        "play.google": googleplay
+        "play.google": googleplay,
+        "music.sonyentertainmentnetwork": musicunlimited
       },
       
       check_song = function () {
