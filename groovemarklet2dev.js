@@ -77,7 +77,7 @@
       },
       
       soundcloud = function () {
-        var song = $("a.playbackTitle__link").text(),
+        var song = $('.playbackSoundBadge__title').text(),
             title = "Soundcloud - " + song;
         return {
             song: song,
