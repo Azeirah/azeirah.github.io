@@ -104,6 +104,18 @@
         };
       },
       
+      deezer = function () {
+        var songTitle = $('span.player-track-link:nth-child(1)').text();
+        var artist = $('span.player-track-link:nth-child(3)').text();
+        var song = title + " - " + artist;
+        var title = "Deezer - " + song;
+        
+        return {
+          song: song,
+          title: title
+        }; 
+      },
+      
       redirects = {
         "grooveshark": grooveshark,
         "plug": plug,
@@ -114,7 +126,8 @@
         "soundcloud": soundcloud,
         "youtify": youtify,
         "play.google": googleplay,
-        "music.sonyentertainmentnetwork": musicunlimited
+        "music.sonyentertainmentnetwork": musicunlimited,
+        "deezer": deezer
       },
       
       check_song = function () {
