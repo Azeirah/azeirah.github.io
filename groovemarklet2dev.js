@@ -159,7 +159,7 @@
             .attr('title', 'For more info, click me!')
             .attr('href', '')
             .css('color', 'red')
-            .parent().append('<a href="http://obsproject.com/forum/viewtopic.php?f=22&t=4223">, not suported.</a>');
+            .parent().append('<a href="http://obsproject.com/forum/viewtopic.php?f=22&t=4223">, not supported.</a>');
     }
 
     function supported() {
