@@ -105,6 +105,16 @@
             title: title
         };
     }
+    
+    function youtube() {
+        var songTitle = $('#eow-title').text();
+        var title = "YouTube - " + songTitle;
+        
+        return {
+            song: song,
+            title: title;
+        };
+    }
 
     var redirects = {
         "grooveshark": grooveshark,
@@ -116,7 +126,8 @@
         "soundcloud": soundcloud,
         "youtify": youtify,
         "play.google": googleplay,
-        "deezer": deezer
+        "deezer": deezer,
+        "youtube": youtube
     };
 
     function check_song() {
