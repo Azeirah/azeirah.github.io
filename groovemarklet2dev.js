@@ -112,7 +112,7 @@
         
         return {
             song: song,
-            title: title;
+            title: title
         };
     }
 
