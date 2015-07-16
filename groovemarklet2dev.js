@@ -66,6 +66,16 @@
             title: title
         };
     }
+    
+    function mixcloud() {
+        var song = $(".player-cloudcast-title").text() + " - " + $(".player-cloudcast-author-link").text();
+        var title = "Mixcloud - " + song;
+        
+        return {
+            song: song,
+            title: title
+        };
+    }
 
     function rdio() {
         var song = $(".song_title").text() + " - " + $(".text_metadata .artist_title").text(),
@@ -127,7 +137,8 @@
         "youtify": youtify,
         "play.google": googleplay,
         "deezer": deezer,
-        "youtube": youtube
+        "youtube": youtube,
+        "mixcloud": mixcloud
     };
 
     function check_song() {
